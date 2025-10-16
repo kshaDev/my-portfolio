@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kshama Sharma - Frontend Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h2>Kshama Sharma</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span style="color: var(--primary-color);">Kshama Sharma</span></h1>
+            <h2>Frontend Developer</h2>
+            <p>I enjoy designing clean and simple websites using HTML, CSS, and JavaScript. I'm constantly learning and improving my skills to build user-friendly web pages.</p>
+            <button class="cta-button" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'});">View My Work</button>
+        </div>
+        <div class="hero-image">
+            <img src="profile.jpeg" alt="Kshama Sharma">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a Computer Science graduate with a strong interest in web development. I enjoy creating responsive and attractive websites using HTML, CSS, and JavaScript.</p>
+                    <p>I’ve built a few small projects like a Rock Paper Scissors game, a Weather App, and some mini projects that helped me strengthen my frontend skills. I’m now looking forward to learning from real-world experience through internships.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>4+</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat">
+                        <h3>Beginner</h3>
+                        <p>Frontend Level</p>
+                    </div>
+                    <div class="stat">
+                        <h3>Learning</h3>
+                        <p>Every Day</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                    <p>Well-structured and semantic web pages</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                    <p>Responsive design and styling</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <p>Adding interactivity and logic to websites</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+<section id="projects" class="projects">
+    <div class="container">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            
+            <div class="project-card">
+                <img src="/images/rps.JPG" alt="Project 1">
+                <div class="project-info">
+                    <h3>Rock Paper Scissors Game</h3>
+                    <p>Simple and fun JavaScript game that lets you play against the computer.</p>
+                    <div class="project-links">
+                        <a href="https://rock-paper-scissor-kshama.netlify.app" target="_blank">Live</a>
+                        <a href="https://github.com/kshaDev/rock-paper-scissor" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="/images/w-app.JPG" alt="Project 2">
+                <div class="project-info">
+                    <h3>Weather App</h3>
+                    <p>Displays real-time weather using a free API and shows temperature & condition.</p>
+                    <div class="project-links">
+                        <a href="https://weather-app-kshama.netlify.app" target="_blank">Live</a>
+                        <a href="https://github.com/kshaDev/weather-app" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="/images/tto.JPG" alt="Project 3">
+                <div class="project-info">
+                    <h3>Tic Tac Toe Game</h3>
+                    <p>A simple two-player Tic Tac Toe game built using HTML, CSS, and JavaScript.</p>
+                    <div class="project-links">
+                        <a href="https://tic-tac-toe-game-kshama.netlify.app" target="_blank">Live</a>
+                        <a href="https://github.com/kshaDev/tic-tac-toe-game" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="/images/cc.JPG" alt="Project 4">
+                <div class="project-info">
+                    <h3>Currency Converter</h3>
+                    <p>Converts one currency to another in real-time using a free API and displays accurate rates.</p>
+                    <div class="project-links">
+                        <a href="https://currency-converter-kshama.netlify.app" target="_blank">Live</a>
+                        <a href="https://github.com/kshaDev/currency-converter" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="/images/mini.JPG" alt="Project 5">
+                <div class="project-info">
+                    <h3>Mini Projects</h3>
+                    <p>A collection of small web projects built to practice HTML, CSS, and JavaScript concepts.</p>
+                    <div class="project-links">
+                        <a href="https://mini-projects-kshama.netlify.app" target="_blank">Live</a>
+                        <a href="https://github.com/kshaDev/mini-projects" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="/images/portfolio.JPG" alt="Project 6">
+                <div class="project-info">
+                    <h3>My Portfolio</h3>
+                    <p>A simple personal website showcasing my projects and contact details.</p>
+                    <div class="project-links">
+                        <!-- Ye links baad me add karna jab portfolio push + host ho jaye -->
+                        <a href="#" target="_blank">Live</a>
+                        <a href="#" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p><a href="mailto:sharmakshama2806@email.com">sharmakshama2806@email.com</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Mumbai, India</p>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/kshaDev"><i class="fab fa-github"></i></a>
+            </div>
+            <p>&copy; 2025 Kshama Sharma. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
